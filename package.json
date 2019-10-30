@@ -1,0 +1,33 @@
+{
+  "name": "sentiment2019vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon node --experimental-modules src/components/getdata.mjs",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.0",
+    "dotenv": "^6.1.0",
+    "firebase": "^7.0.0",
+    "nodemon": "^1.18.5",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.4.2",
+    "vue-router": "^3.0.3",
+    "vuefire": "^2.1.2"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.11.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
