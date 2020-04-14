@@ -17,23 +17,23 @@ export default {
  
 
 // I want to rewrite this:
-firestore() {
+/* firestore() {
    this.dataLoaded = true
    return {tweetdata: db.collection('tweets').where('screen_name', '==', this.twitter_screen_name), }
-   }, 
+   },  */
 
 // .. to this:
 
-/* methods: {
+methods: {
 getData: function() {
    return {tweetdata: db.collection('tweets').where('screen_name', '==', this.twitter_screen_name), }
       },
 },
 
- created () {
-    this.getData
-    this.dataLoaded = true
-     }, */
+async beforeMount() {
+  await this.getData()
+  this.dataLoaded = true
+},
 
 computed: {
 calculateAvgScores() {
